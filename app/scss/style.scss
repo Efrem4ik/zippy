@@ -7,13 +7,19 @@
   background-image: url(../images/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   min-height: 693px;
+  margin-bottom: 85px;
+  color: #fff;
+  a{
+    color: #fff;
+  }
 }
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  position: relative;
 }
 .header__logo {
   font-family: 'Montserrat', sans-serif;
@@ -22,9 +28,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -4px;
-  a{
-    color: #ffffff;
-  }
+  margin-bottom: 128px;
 }
 .header__menu {
   li{
@@ -37,6 +41,59 @@
     }
   }
   a{
-    color: #fff;
+    &:hover{
+      color: #ffe26d;
+    }
+  &.active {
+    color: #ffe26d;
+    }
+  }
+}
+.slider__item {
+  max-width: 472px;
+  &-title{
+    font-size: 41px;
+    font-weight: 700;
+    margin-bottom: 33px;
+  }
+  &-text{
+    font-family: "Roboto";
+    font-size: 19px;
+    font-weight: 100;
+    margin-bottom: 35px;
+  }
+  &-link{
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    background-color: #ffe26d;
+    border-radius: 4px;  
+    
+    &:hover{
+      background-color: #62497c;
+      color: #fff;
+    }
+  }   
+  a{
+    color: #000;
+    }
+
+}
+.slick-dots{
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: -85%;
+  button{
+    font-size: 0;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 7px;
+    cursor: pointer;
+    &:focus {
+      background-color: #ffffff;
+    }
   }
 }

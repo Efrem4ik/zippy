@@ -2,3 +2,41 @@
 @import 'global';
 @import 'fonts';
 
+
+.header {
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 693px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.header__logo {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 41px;
+  font-size: 29px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+  a{
+    color: #ffffff;
+  }
+}
+.header__menu {
+  li{
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &+li {
+      padding-left: 35px;
+    }
+  }
+  a{
+    color: #fff;
+  }
+}

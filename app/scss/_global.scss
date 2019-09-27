@@ -24,6 +24,18 @@ li {
   margin: 0 auto;
   padding: 0 15px;
 }
+.header__menu-btn{
+  width: 30px;
+  display: none;
+  cursor: pointer;
+  .row{
+    height: 4px;
+    width: 100%;
+    margin-bottom: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+}
 .title{
   color: $black;
   font-size: 44px;

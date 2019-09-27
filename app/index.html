@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/media.min.css">
 </head>
 
 <body>
@@ -22,6 +23,11 @@
           </a>
         </div>
         <nav class="header__menu">
+          <div class="header__menu-btn">
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+          </div>
           <ul>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Projects</a></li>
@@ -283,8 +289,10 @@
     </div>
     <div class="video-slider__items">
       <div class="video-slider__item">
-        <iframe width="690" height="461" src="https://www.youtube.com/embed/duaGFwjF1AI" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video">
+          <iframe width="690" height="461" src="https://www.youtube.com/embed/duaGFwjF1AI" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <div class="video-slider__info">
           <div class="video__title">
             Video title
@@ -295,8 +303,11 @@
         </div>
       </div>
       <div class="video-slider__item">
-        <iframe width="690" height="461" src="https://www.youtube.com/embed/gWHY7TUmSqg" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video">
+          <iframe width="690" height="461" src="https://www.youtube.com/embed/gWHY7TUmSqg" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
         <div class="video-slider__info">
           <div class="video__title">
             Video title
@@ -307,8 +318,10 @@
         </div>
       </div>
       <div class="video-slider__item">
-        <iframe width="690" height="461" src="https://www.youtube.com/embed/idq0Q99gS-Q" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video">
+          <iframe width="690" height="461" src="https://www.youtube.com/embed/idq0Q99gS-Q" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <div class="video-slider__info">
           <div class="video__title">
             Video title
@@ -455,8 +468,10 @@
         Newsletter Signup
       </div>
       <form class="signup__form">
-        <input type="text" placeholder="abc@example.com">
-        <button class="sugnup-btn btn">Sign Up</button>
+        <div class="signup__inner">
+          <input type="text" placeholder="abc@example.com">
+          <button class="sugnup-btn btn">Sign Up</button>
+        </div>
       </form>
     </div>
   </section>

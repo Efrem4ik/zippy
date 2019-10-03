@@ -45,7 +45,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('js', function () {
-  return gulp.src('app/js/*.js')
+  return gulp.src(['app/js/*.js'])
     .pipe(browserSync.reload({ stream: true }))
 });
 
